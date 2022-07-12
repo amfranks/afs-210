@@ -1,1 +1,2 @@
-# afs-210
+# AFS-210—Data Structures & Algorithms
+This course provides students with the design, analysis, and implementation of data structures and algorithms to solve problems using an object‐oriented programming language. Topics include elementary data structures (including stacks, queues, arrays, and lists), advanced data structures (including trees and graphs), the algorithms used to manipulate these structures, and their application.
