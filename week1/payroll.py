@@ -6,13 +6,16 @@ class Employee:
         self.hourlyPay = hourlyPay
 
     def pay(self, ttlHrsWorked):
-        weeklyPay = float(self.hourlyPay) * float(ttlHrsWorked)
+        weeklyPay = float(self.hourlyPay) * float(ttlHrsWorked) 
 
         if (float(ttlHrsWorked) <= 40):
+
             return round(weeklyPay, 2)
         elif (float(ttlHrsWorked) > 40):
-            # additionalHours = float(ttlHrsWorked) - 40
-            additionalHoursPay = weeklyPay + (1.5 * float(self.hourlyPay))
+
+            weeklyPay = float(self.hourlyPay) * 40
+            additionalHours = float(ttlHrsWorked) - 40
+            additionalHoursPay = weeklyPay + ((1.5 * float(self.hourlyPay)) * additionalHours)
             return round(additionalHoursPay, 2)
 
 employeeID = input("Please enter the Employee's ID: ")
